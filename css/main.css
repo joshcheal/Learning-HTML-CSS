@@ -1,37 +1,80 @@
+* {
+  box-sizing: border-box;
+  //outline: 1px dotted grey;
+}
+
 body {
-  margin: 0;
-  padding: 50px
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
-.wrapper {
-  margin-left: 40px;
-  height: 100px;
-  width: 680px;
+#container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../img/varsity_lacrosse_lineup_bandw.jpg');
 }
 
-.name {
-  width: 200px;
+#name {
+  position: relative;
+  text-align: center;
   font-size: 20px;
-  padding-top: 18px;
+  color: white;
+  height: 100%;
+  padding-top: 100px;
+  text-decoration: underline;
+  width: 400px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.title {
-  font-style: italic;
-  font-weight: bold;
-}
-
-.chapter {
-  color: black;
-}
-
-.personalprofile {
-  display: block;
-  height: 280px;
-  width: 280px;
-}
-
-.education {
+.nav {
+  background-color: black;
+  color: white;
+  margin: 0 0 0 0;
   display: inline-block;
-  height: 280px;
-  width: 280pz;
+  position: relative;
+  width: 100%;
+  list-style-type: none;
+  padding-left: 850px;
+}
+
+.nav li {
+  display: inline;
+  padding: 10px;
+}
+
+
+.null {
+  display: none;
+  //This means there is no interaction is it literally not there.
+  display: block;
+  //This is a block element, it cannot be inline with others, like a div.
+  display: inline;
+  //This is like a span, little awkward.
+  display: inline-block;
+  //This has outer properties of an inline element, inner of a block
+
+
+  position: static;
+  //This is the default
+  position: relative;
+  position: absolute;
+  position: fixed;
+
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+
+  width: 100px;
+  height: 100px;
+
+  box-sizing: border-box;
+  //This makes padding grow from the inside, makes more sense.
 }
